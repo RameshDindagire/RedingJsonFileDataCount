@@ -39,7 +39,7 @@ import com.fasterxml.jackson.databind.node.ArrayNode;
 @RequestMapping("/user")
 public class UserController {
 	
-	@GetMapping("get")
+	@GetMapping("/get")
 	public String getJsonData(Model model) throws IOException, ParseException{
 		
 		/* Here We Convert The NDJSON File NORMAL JSON File To Read That File */
