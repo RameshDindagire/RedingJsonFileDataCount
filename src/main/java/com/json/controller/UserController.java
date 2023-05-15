@@ -43,8 +43,8 @@ public class UserController {
 	public String getJsonData(Model model) throws IOException, ParseException{
 		
 		/* Here We Convert The NDJSON File NORMAL JSON File To Read That File */
-			File ndJsonFile = new File("src/main/resources/test2.json");
-			File JsonFile = new File("src/main/resources/test1.json");
+			File ndJsonFile = new File("D:\\spring_Project\\RedingJsonFileDataCount\\src\\main\\resources\\static\\test1.json");
+			File JsonFile = new File("D:\\spring_Project\\RedingJsonFileDataCount\\src\\main\\resources\\static\\test1.json");
 			
 			ObjectMapper mapper = new ObjectMapper();
 			
