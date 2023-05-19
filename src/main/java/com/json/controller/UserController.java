@@ -43,8 +43,8 @@ public class UserController {
 	public String getJsonData(Model model) throws IOException, ParseException{
 		
 		/* Here We Convert The NDJSON File NORMAL JSON File To Read That File */
-		File ndJsonFile = new File(System.getProperty("user.dir")+"/src/main/resources/test2.json");
-		File JsonFile = new File(System.getProperty("user.dir")+"/src/main/resources/test1.json");
+		File ndJsonFile = new File(getClass().getResource("test2.json").getFile());
+		File JsonFile = new File(getClass().getResource("test2.json").getFile());
 			
 			ObjectMapper mapper = new ObjectMapper();
 			

@@ -16,6 +16,7 @@
 	<description>This Is User For Qr Gonaetor</description>
 	<properties>
 		<java.version>17</java.version>
+		<start-class>com.json.RedingJsonFileDataCountApplication.java</start-class>
 	</properties>
 	<dependencies>
 		<dependency>
