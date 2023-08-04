@@ -19,17 +19,12 @@ import com.google.gson.JsonObject;
 
 
 @SpringBootApplication
-public class RedingJsonFileDataCountApplication extends SpringBootServletInitializer{
+public class RedingJsonFileDataCountApplication {
 
 	public static void main(String[] args) throws IOException {
 		SpringApplication.run(RedingJsonFileDataCountApplication.class, args);
 		
 		
 	}
-	
-	 @Override
-	    protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-	        return builder.sources(RedingJsonFileDataCountApplication.class);
-	    }
 
 }

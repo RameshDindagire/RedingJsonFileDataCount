@@ -1,4 +1,8 @@
-{"Type":"SignUP","deviceid":"VVMP8G-90KLH-PQL8623","timestamp":"2023-03-10 10:51:21"}
+{
+	"Type": "SignUP",
+	"deviceid": "VVMP8G-90KLH-PQL8623",
+	"timestamp": "2023-03-10 10:51:21"
+}
 {"Type":"saveImageToFinnone","timestamp":"2023-03-10 12:00:08","LoanNumber":"LASEQMF000005010811"}
 {"Type":"SignUP","deviceid":"W0YEARGJXJWN0EPR7308","timestamp":"2023-03-10 12:50:28"}
 {"Type":"saveImageToFinnone","timestamp":"2023-03-10 12:54:11","LoanNumber":"LASEQMF000005007636"}

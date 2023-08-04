@@ -5,9 +5,6 @@ import java.io.File;
 
 import java.io.FileReader;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.Map;
 
 import org.json.simple.*;
 import org.json.simple.JSONArray;
@@ -19,8 +16,8 @@ import org.json.simple.JSONArray;
 
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -43,8 +40,11 @@ public class UserController {
 	public String getJsonData(Model model) throws IOException, ParseException{
 		
 		/* Here We Convert The NDJSON File NORMAL JSON File To Read That File */
-		File ndJsonFile = new File(getClass().getResource("test2.json").getFile());
-		File JsonFile = new File(getClass().getResource("test2.json").getFile());
+		Resource ndJsonResource = new ClassPathResource("test1.json");
+		File ndJsonFile = ndJsonResource.getFile();
+
+		Resource jsonResource = new ClassPathResource("test2.json");
+		File JsonFile = jsonResource.getFile();
 			
 			ObjectMapper mapper = new ObjectMapper();
 			
